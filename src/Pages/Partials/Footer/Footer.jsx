@@ -1,17 +1,12 @@
-import React from 'react';
-import './style.scss';
-
+import React from "react";
+import "./style.scss";
 
 function Footer() {
-    return (
-
-
-        <div className="App">
-            <div className='footer'>
-            <h2>Footer</h2>
-            </div>
-        </div>
-    );
+  return (
+    <div className="footer">
+      <h2> Projet Countries (Restcountries api) - 2023 </h2>
+    </div>
+  );
 }
 
 export default Footer;

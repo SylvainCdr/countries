@@ -1,0 +1,21 @@
+.footer {
+     max-width: 1240px;
+     background-color: rgb(140, 164, 140);
+     height: 6vh;
+     display: flex;
+     justify-content: center;
+     margin: auto;
+     border-radius: 5rem 5rem 0rem 0rem;
+     
+
+     h2
+{
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+    }
+}
+
