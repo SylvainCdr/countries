@@ -93,16 +93,17 @@
     height: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    box-shadow: #5a5a5a 20px 0px 20px 5px;
+    
     border-radius:5%    ;
 
-    iframe {
-        border-radius: 5%;
-        -webkit-border-radius: 5%;
-        -moz-border-radius: 5%;
-        -ms-border-radius: 5%;
-        -o-border-radius: 5%;
 }
+iframe {
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    box-shadow: #5a5a5a 20px 0px 20px 5px;
  
 }
 

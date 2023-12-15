@@ -70,22 +70,33 @@ function Country() {
         </div>
       </div>
 
-      {/* Affichage de la carte du pays en mapant du latlng  */}
-      
-        <div className="map">
-          <iframe
-            title="map"
-            src={`https://maps.google.com/maps?q=${details.latlng}&t=&z=6&ie=UTF8&iwloc=&output=embed`}
-            width="100%"
-            height="450px"
-            
+      {/* Affichage de la carte du pays en mapant les latlng  */}
 
-          ></iframe>
+      <div className="map">
+        <h2>Localisation </h2>
+        <iframe
+          title="map"
+          src={`https://maps.google.com/maps?q=${details.latlng}&t=&z=6&ie=UTF8&iwloc=&output=embed`}
+          width="100%"
+          height="450px"
+        ></iframe>
       </div>
 
       <Link to="/">
         <button className="Back_btn">Back</button>
       </Link>
+
+      {/* Affichage de la météo du pays en mapant latlng */}
+      <div className="weather">
+        <h2>Météo en live</h2>
+        <iframe
+          title="weather"
+          src={`https://embed.windy.com/embed2.html?lat=${details.latlng[0]}&lon=${details.latlng[1]}&zoom=6&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=${details.latlng[0]}&detailLon=${details.latlng[1]}&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1`}
+          width="100%"
+          height="450px"
+          style={{ border: "none", borderRadius: "10px" }}
+        ></iframe>
+      </div>
     </div>
   ));
 }
